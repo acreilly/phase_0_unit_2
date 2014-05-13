@@ -1,5 +1,16 @@
 # U2.W4: Add it up!
 
+def total(array) 
+  number = 0
+  array.each do |i|
+    i += number
+  end
+  number
+end
+
+total([1,2,3])
+
+
 # Complete each step below according to the challenge directions and 
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.  
