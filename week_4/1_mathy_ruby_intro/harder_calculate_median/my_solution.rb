@@ -8,13 +8,16 @@
 
 # 1. Pseudocode
 
-# What is the input?
-# What is the output? (i.e. What should the code return?)
+# What is the input? an array of numbers
+# What is the output? (i.e. What should the code return?) the median of the numbers
 # What are the steps needed to solve the problem?
+# create a method called median with a parameter of array
+# create a loop taking each element of the array
+#Multiply each element in the array
+#divide each element in the array by the length of the array
 
 
 # 2. Initial Solution
-
 
 
 
