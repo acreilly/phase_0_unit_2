@@ -1,5 +1,6 @@
 # U2.W4: Add it up!
 
+
 # Complete each step below according to the challenge directions and 
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.  
@@ -50,4 +51,7 @@ puts sentence_maker(["i", "want", "to", "go", "to", "the", "movies"])
 
 
 # 4. Reflection 
+<<<<<<< HEAD
 # I need help at first, but once I got the idea I got the problems correct. I really need to review ruby before I go further in this weeks tasks.
+=======
+>>>>>>> FETCH_HEAD
