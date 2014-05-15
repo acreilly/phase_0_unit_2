@@ -51,5 +51,21 @@ essay_writer("The Scream", "Edvard Munch", 1895, "impressionist", 122.2)
 
 
 # 5. Reflection 
-
+#What parts of your strategy worked? What problems did you face?
+#Everything worked. I originally made the number inputs to be strings but in the refractor section I
+#turned them into integers that turn into strings
+#What questions did you have while coding? What resources did you find to help you answer them?
+#No questions. This challenge seems really easy, I am wondering if I did it incorrectly.
+#It says to use if statements ect, but I don't see why I would need to do any of that.
+# I will later take a look at others codes and see what they did and if they used other ways.
+#What concepts are you having trouble with, or did you just figure something out? If so, what?
+# None
+#Did you learn any new skills or tricks?
+#No
+#How confident are you with each of the Learning Competencies?
+# Confident. Unless I didn't do the challenge correctly. I would like feedback.
+#Which parts of the challenge did you enjoy?
+# Its fun to have an easy time when coding. It makes me feel good and confident.
+#Which parts of the challenge did you find tedious?
+# None, just wondering if it was done the way DBC wanted.
 
