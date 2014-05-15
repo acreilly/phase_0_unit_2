@@ -15,21 +15,74 @@
 	# return integer
 # elsif integer is over 1000
 	# turn integer to string
-	# inject comma every 3 characters
+	# insert comma every 3 characters
 	# return string
 # else
 	# return string of error
 
 # 2. Initial Solution
+=begin
+def separate_comma(num)
+if num < 1000
+	num = num.to_s
+	return num
+elsif num >= 1000
+	num = num.to_s
+	num.insert(-4,",")
+elsif num >= 1000000
+	num = num.to_s
+	num.insert(-4,",")
+	num.insert(-8,",")
+	return num
+else
+	return "ERROR"
+end
+end
+=end
+
+=begin
+def separate_comma(num)
+if num.between?(0,999)
+	num = num.to_s
+	return num
+elsif num.between?(1000,999999)
+	num = num.to_s
+	num.insert(-4,",")
+elsif num.between?(1000000,999999999)
+	num = num.to_s
+	num.insert(-4,",").insert(-8,",")
+	return num
+else
+	return "ERROR"
+end
+end
+=end
 
 
 
-separate_comma(1000)    
-separate_comma(1000000) 
-separate_comma(0)       
-separate_comma(100)
 # 3. Refactored Solution
+# I tried to combine and remove extra things that werent needed
+# I know there is a better way to solve this issue but it works.
+# If I have more time this week I will attempt for another solution
+def separate_comma(num)
+if num.between?(0,999)
+	num.to_s
+elsif num.between?(1000,999999)
+	num.to_s.insert(-4,",")
+elsif num.between?(1000000,999999999)
+	num = num.to_s
+	num.insert(-4,",").insert(-8,",")
+else
+	"ERROR"
+end
+end
 
 
+#Driver test code
 
+puts separate_comma(1000)    
+puts separate_comma(19000)    
+puts separate_comma(9900000) 
+puts separate_comma(0)       
+puts separate_comma(100)
 # 4. Reflection 
