@@ -22,11 +22,23 @@
 # 2. Initial Solution
 
 def mode(array)
-for array.each do |i|
-
+array.each do |i|
+if i == i
+return i
+else
+	return array
 end
 end
+end
 
+def mode(array)
+count = 0
+array.each do |i|
+count += 1
+count += i
+end
+count
+end
 
 
 # 3. Refactored Solution
