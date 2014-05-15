@@ -21,24 +21,29 @@
 
 
 # 3. Initial Solution
-def essay_writer(piece,artist,year,style,worth)
-puts "#{piece} is a great piece of art. It was created by #{artist} the year #{year}."
-puts "Its style considered to be #{style} and if sold today would be worth #{worth}."
-end
+#def essay_writer(piece,artist,year,style,worth)
+#puts "#{piece} is a great piece of art. It was created by #{artist} the year #{year}."
+#puts "Its style considered to be #{style} and if sold today would be worth #{worth}."
+#end
 
-essay_writer("The Card Players", "Paul Cezanne", "1892-1893", "Postimpressionist", "$269.4 million")
-essay_writer("Portrait of Dr. Gachet", "Vincent van Gogh", "1890", "Postimpressionist", "$82.5 million" )
-essay_writer("The Scream", "Edvard Munch", "1895", "impressionist", "122.2 million")
+#essay_writer("The Card Players", "Paul Cezanne", "1892-1893", "Postimpressionist", "$269.4 million")
+#essay_writer("Portrait of Dr. Gachet", "Vincent van Gogh", "1890", "Postimpressionist", "$82.5 million" )
+#essay_writer("The Scream", "Edvard Munch", "1895", "impressionist", "$122.2 million")
+
 # 4. Refactored Solution
+# Need to be able to put numbers in as numbers and turn them into strings within method
 
-
-
-
-
-
+def essay_writer(piece,artist,year,style,worth)
+puts "#{piece} is a great piece of art. It was created by #{artist} the year #{year.to_s}."
+puts "Its style considered to be #{style} and if sold today would be worth $#{worth.to_s} million."
+end
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
+
+essay_writer("The Card Players", "Paul Cezanne", 1892, "Postimpressionist", 269.4)
+essay_writer("Portrait of Dr. Gachet", "Vincent van Gogh", 1890, "Postimpressionist", 82.5 )
+essay_writer("The Scream", "Edvard Munch", 1895, "impressionist", 122.2)
 
 
 
