@@ -35,7 +35,7 @@ def total(array)
   number
 end
 
-puts total([1,2,3])
+puts total([1,2,3]) == 6
 
 
 def sentence_maker(array)
@@ -43,7 +43,7 @@ array.first.capitalize!
 array.join(" ") + "."
 end
 
-puts sentence_maker(["i", "want", "to", "go", "to", "the", "movies"]) 
+puts sentence_maker(["i", "want", "to", "go", "to", "the", "movies"]) == "I want to go to the movies."
 
 
 # 3. Refactored Solution
@@ -51,7 +51,4 @@ puts sentence_maker(["i", "want", "to", "go", "to", "the", "movies"])
 
 
 # 4. Reflection 
-<<<<<<< HEAD
 # I need help at first, but once I got the idea I got the problems correct. I really need to review ruby before I go further in this weeks tasks.
-=======
->>>>>>> FETCH_HEAD
