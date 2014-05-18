@@ -19,7 +19,7 @@
 
 
 # 2. Initial Solution
-
+=begin
 def get_grade(array)
 sum = 0
 array.each do |i|
@@ -40,10 +40,26 @@ else
 	"error"
 end
 end
-
-puts get_grade([90,50,100])
+=end
 # 3. Refactored Solution
+# Changed to case, a lot less writing. Also changed the loop to a one line loop to save room.
+def get_grade(array)
+sum = 0
+array.each {|i| sum += i}
+average = sum / array.length
+    case average 
+    when 90..100
+      "A"
+    when 80..89
+      "B"
+    when 70..79
+      "C"
+    when 60..69
+      "D"
+    else
+      "F"
+  end
+end
 
-
-
+puts get_grade([90,50,100]) == "B"
 # 4. Reflection 
