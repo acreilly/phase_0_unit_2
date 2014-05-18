@@ -11,18 +11,15 @@
 # What is the input? an array of numbers
 # What is the output? (i.e. What should the code return?) the median of the numbers
 # What are the steps needed to solve the problem?
-<<<<<<< HEAD
 # sort array
 # check if array length is odd
 # if odd take arrays length divide by 2 which returns middle element
 # if even take arrays length divide by two and add that to arrays length divided by two minus one
 # divide that by two floated for exact number
-=======
 # create a method called median with a parameter of array
 # create a loop taking each element of the array
 #Multiply each element in the array
 #divide each element in the array by the length of the array
->>>>>>> FETCH_HEAD
 
 
 # 2. Initial Solution
@@ -36,11 +33,11 @@ else
 end
 end
 
-puts median([1,2,3])      # => 2
-puts median([1,5,8,2,55])
-puts median([1,2,3,4])
-puts median([4.5, 0, -1]) # => 0
-puts median([-100, 100])  # => 0.0
+puts median([1,2,3]) == 2
+puts median([1,5,8,2,55]) == 5
+puts median([1,2,3,4]) == 2.5
+puts median([4.5, 0, -1])  == 0
+puts median([-100, 100])   == 0
 
 # 3. Refactored Solution
 
