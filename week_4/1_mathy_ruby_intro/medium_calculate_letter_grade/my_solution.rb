@@ -63,3 +63,23 @@ end
 
 puts get_grade([90,50,100]) == "B"
 # 4. Reflection 
+
+=begin
+
+What parts of your strategy worked? What problems did you face?
+I knew this one. Didn't face any problems.
+
+What questions did you have while coding? What resources did you find to help you answer them?
+Had to do some research on case again since it has been awhile
+What concepts are you having trouble with, or did you just figure something out? If so, what?
+none
+Did you learn any new skills or tricks?
+just remembering how to do case again
+How confident are you with each of the Learning Competencies?
+yes
+Which parts of the challenge did you enjoy?
+getting it to work
+Which parts of the challenge did you find tedious?
+none
+
+=end

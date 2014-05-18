@@ -44,3 +44,23 @@ puts median([-100, 100])   == 0
 
 
 # 4. Reflection 
+
+=begin
+What parts of your strategy worked? What problems did you face?
+Had to do some research, I've done this before but was rusty.
+
+What questions did you have while coding? What resources did you find to help you answer them?
+Just needed to do some research
+
+What concepts are you having trouble with, or did you just figure something out? If so, what?
+none
+Did you learn any new skills or tricks?
+no
+How confident are you with each of the Learning Competencies?
+Confident
+
+Which parts of the challenge did you enjoy?
+getting it to work
+Which parts of the challenge did you find tedious?
+none
+=end

@@ -49,6 +49,15 @@ puts sentence_maker(["i", "want", "to", "go", "to", "the", "movies"]) == "I want
 # 3. Refactored Solution
 # I believe this was the simplest way to do the problem
 
-
+=begin
 # 4. Reflection 
-# I need help at first, but once I got the idea I got the problems correct. I really need to review ruby before I go further in this weeks tasks.
+What parts of your strategy worked? What problems did you face?
+I need help at first, but once I got the idea I got the problems correct. I really need to review ruby before I go further in this weeks tasks.
+
+What questions did you have while coding? What resources did you find to help you answer them?
+I think I was just really rusty
+
+Which parts of the challenge did you find tedious?
+just that i was rusty, I knew how to do this, I just have
+	been stressed out so I wasn't allowing it to process.
+=end

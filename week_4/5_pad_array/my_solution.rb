@@ -14,7 +14,16 @@
 # What are the steps needed to solve the problem?
 # Create a class called Array
 # Within the array class create pad! method
-	#
+	# make this method check the length of the array
+	# if it is less than minumum length
+	#have it push pad value until it is equal to min
+	# return the array
+
+# within array create method called pad
+	#copy the array
+	# check array length, if less than min
+	#push pad value
+	#return the array
 
 # 2. Initial Solution
 
@@ -47,3 +56,23 @@ puts [1,2,3].pad(5, 'apple') == [1,2,3,'apple', 'apple']
 puts [1,2,3].pad(0) == [1,2,3]
 
 #Reflection
+=begin
+What parts of your strategy worked? What problems did you face?
+I had to do a lot of research on this one.
+
+What questions did you have while coding? What resources did you find to help you answer them?
+Learning how to call an instance within the class
+
+What concepts are you having trouble with, or did you just figure something out? If so, what?
+--
+Did you learn any new skills or tricks?
+calling an instance within a class
+How confident are you with each of the Learning Competencies?
+confident.. I need to work on my psudocode part though.
+I seem to not have the right idea at first so my pseudocode is
+never what I end up actually writing
+Which parts of the challenge did you enjoy?
+getting it to work
+Which parts of the challenge did you find tedious?
+
+=end
