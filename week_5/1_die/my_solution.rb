@@ -11,23 +11,27 @@
 
 
 # 3. Initial Solution
-
+=begin
 class Die
-  def initialize(sides)
-    # code goes here
-  end
-  
+	attr_accessor :sides
+	def initialize(sides)
+  		if sides < 2
+  			raise ArgumentError, 'Sides cannot be less than one' 
+  		end
+  	end
+
   def sides
-    # code goes here
+  	@sides = sides
   end
   
   def roll
-    # code goes here
+  	return 1 + rand(@sides)
   end
+
 end
 
 
-
+=end
 # 4. Refactored Solution
 
 
@@ -37,7 +41,9 @@ end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
-
+die = Die.new(6)
+puts die.sides #== 6
+puts die.roll
 
 
 
