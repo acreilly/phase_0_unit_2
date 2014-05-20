@@ -20,7 +20,10 @@ class GuessingGame
   def guess
     
   end
-  # Make sure you define the other required methods, too
+  
+  def solved?
+    
+  end
 end
 
 
