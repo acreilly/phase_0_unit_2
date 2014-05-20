@@ -38,7 +38,12 @@ end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
-
+game.solved? == false
+game.guess(5) == :low
+game.guess(20) == :high
+game.solved? == false
+game.guess(10) == :correct
+game.solved? == true
 
 
 
