@@ -34,8 +34,9 @@ end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
-
-
+die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
+die.sides == 6
+die.roll == ("A" || "B" || "C" || "D" || "E" || "F")
 
 
 
