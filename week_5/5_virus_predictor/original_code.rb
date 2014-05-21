@@ -1,12 +1,16 @@
 # U2.W5: Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself]
+
+#state_data is two hashes
+# the hash of the state with hash rocket to the information
+#within the information hash is another hash that uses the new symbol syntax rather than
+# the :before or the => hash rocket.
 
 # EXPLANATION OF require_relative
-#
-#
-require_relative 'state_data' # allows this file to access information from state_data (like href for css)
-
+#allows this file to access information from state_data (like href for css)
+=begin ORIGINAL CODE
+require_relative 'state_data' 
 class VirusPredictor
 
   # takes all the parameters and setting them to instance variables so other methods can have access
@@ -24,7 +28,8 @@ class VirusPredictor
     speed_of_spread(@population_density, @state)
   end
 
-# methods within private cannot be called outside of the class
+
+# v PRIVATE -methods within private cannot be called outside of the class
 #This is why virus_effects is above because it allows us to retrieve
 #the information only in the way the coder wanted.
 #if we put private above virus_effects we would not be able to retreive any information
@@ -73,12 +78,72 @@ class VirusPredictor
   end
 
 end
+=end
+require_relative 'state_data' 
+class VirusPredictor
+
+  def initialize(state_of_origin, population_density, population, region, regional_spread)
+    @state = state_of_origin
+    @population = population
+    @population_density = population_density
+    @region = region
+    @next_region = regional_spread
+  end
+
+   def virus_effects  #HINT: What is the SCOPE of instance variables?
+    predicted_deaths(@population_density, @population, @state)
+    speed_of_spread(@population_density, @state)
+  end
+
+  private  
+
+  def predicted_deaths(population_density, population, state)
+    case @population_density 
+    when @population_density >= 200
+      number_of_deaths = (@population * 0.4).floor
+    when 101..150
+      number_of_deaths = (@population * 0.3).floor
+    when 51..100
+      number_of_deaths = (@population * 0.2).floor
+    when @population_density <= 50
+      number_of_deaths = (@population * 0.1).floor
+    else 
+      number_of_deaths = (@population * 0.05).floor
+    end
+
+    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
+
+  end
+
+  def speed_of_spread(population_density, state) 
+    speed = 0.0
+    case @population_density
+    when @population_density >= 200
+      speed += 0.5
+    when 101..150
+      speed += 1
+    when 51..100
+      speed += 1.5
+    when @population_density<= 50
+      speed += 2
+    else 
+      speed += 2.5
+    end
+
+    puts " and will spread across the state in #{speed} months.\n\n"
+
+  end
+
+end
+STATE_DATA.each do |state, info|
+  VirusPredictor.new(state, info[:population_density], info[:population], info[:region], info[:regional_spread]).virus_effects
+end
 
 #=======================================================================
 
 # DRIVER CODE
  # initialize VirusPredictor for each state
-
+=begin
 
 alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population], STATE_DATA["Alabama"][:region], STATE_DATA["Alabama"][:regional_spread]) 
 alabama.virus_effects
@@ -91,3 +156,4 @@ california.virus_effects
 
 alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population], STATE_DATA["Alaska"][:region], STATE_DATA["Alaska"][:regional_spread]) 
 alaska.virus_effects
+=end
