@@ -9,6 +9,7 @@ require_relative 'state_data' # allows this file to access information from stat
 
 class VirusPredictor
 
+  # takes all the parameters and setting them to instance variables so other methods can have access
   def initialize(state_of_origin, population_density, population, region, regional_spread)
     @state = state_of_origin
     @population = population
@@ -17,13 +18,22 @@ class VirusPredictor
     @next_region = regional_spread
   end
 
+  # returns the strings the methods below created with the information taken from state_data
   def virus_effects  #HINT: What is the SCOPE of instance variables?
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
   end
 
+# methods within private cannot be called outside of the class
+#This is why virus_effects is above because it allows us to retrieve
+#the information only in the way the coder wanted.
+#if we put private above virus_effects we would not be able to retreive any information
   private  #what is this?  what happens if it were cut and pasted above the virus_effects method
 
+#Checks size of polulation density
+# sets number_of_deaths variable to the size of the population
+# times the number that goes with that density then rounds it down
+#Then prints out the string with the state and number of deaths that will occur due to the outbreak
   def predicted_deaths(population_density, population, state)
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -40,7 +50,9 @@ class VirusPredictor
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
-
+#creates variable speed and sets it to 0.0 
+#Checks the population density and sets speed to the given speed for that density size
+#returns string stating how many months it will take to spread across state
   def speed_of_spread(population_density, state) #in months
     speed = 0.0
 
