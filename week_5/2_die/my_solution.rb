@@ -5,22 +5,36 @@
 
 # 2. Pseudocode
 
-# Input:
-# Output:
+# Input: Array of letters
+# Output: one of those letters randomly chosen
 # Steps:
+#add attr_accessor for labels
+#if labels array is empty
+  #raise argument error
 
+# in sides method return the labels length
+# in roll method randomize labels length
+#return labels with randomize in index
 
 # 3. Initial Solution
 
 class Die
+	attr_accessor :labels
   def initialize(labels)
+  	@labels = labels
+  if labels.empty? == true
+  	raise ArgumentError, "Labels list empty"
   end
+end
 
   def sides
+  	@labels.length
   end
 
   def roll
-  end
+    randomize = rand(@labels.length)
+    @labels[randomize]
+	end
 end
 
 
@@ -35,9 +49,8 @@ end
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
 die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
-die.sides == 6
-die.roll == ("A" || "B" || "C" || "D" || "E" || "F")
-
+puts die.sides == 6
+p ('A'..'F').include?(die.roll) == true
 
 
 # 5. Reflection 
