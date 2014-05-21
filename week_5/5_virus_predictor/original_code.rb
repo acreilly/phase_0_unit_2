@@ -5,7 +5,7 @@
 # EXPLANATION OF require_relative
 #
 #
-require_relative 'state_data'
+require_relative 'state_data' # allows this file to access information from state_data (like href for css)
 
 class VirusPredictor
 
