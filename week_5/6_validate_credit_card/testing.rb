@@ -41,7 +41,7 @@ class CreditCard
 
     def sum
     	double_digit
-  		@card.join.chars.map{|x| x.to_i}.reduce(:+)
+  		@card.join.chars.map{|x| x.to_i}.inject{|x,y| x+y}
     end
 
 	def check_card
@@ -61,15 +61,13 @@ end
 
 card = CreditCard.new(4408041234567893)
 p card.check_card == true
-p card.sum
 
 card = CreditCard.new(4408041234567892)
-p card.check_card == true
-p card.sum
+p card.check_card == false
+
 
 card = CreditCard.new(4563960122001999)
 p card.check_card == true 
-p card.sum
 
 card = CreditCard.new(440804123456789) 	# => should return the Argument Error
 
