@@ -53,4 +53,27 @@ puts die.sides == 6
 p ('A'..'F').include?(die.roll) == true
 
 
+
+=begin
 # 5. Reflection 
+What parts of your strategy worked? What problems did you face?
+Everything worked well, I did have to research how to go about rolling it
+I found that someone used .sample, but I didn't really understnad it
+ and wanted to find a different way to solve it,
+
+What questions did you have while coding? What resources did you find to help you answer them?
+How to make roll work
+What concepts are you having trouble with, or did you just figure something out? If so, what?
+nothing really, once I researched sample I understood it.
+
+Did you learn any new skills or tricks?
+.sample
+How confident are you with each of the Learning Competencies?
+Confident
+
+Which parts of the challenge did you enjoy?
+solving it
+
+Which parts of the challenge did you find tedious?
+none
+=end

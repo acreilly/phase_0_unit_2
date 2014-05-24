@@ -99,4 +99,33 @@ p card.check_card == true
 
 
 
+
+=begin
 # 5. Reflection 
+What parts of your strategy worked? What problems did you face?
+This was definitely the toughest challenge. I had to do a lot of research for this
+	challenge.
+
+What questions did you have while coding? What resources did you find to help you answer them?
+How to take only every other digit and double it..
+how do I add them all together.. ect. I googled how to select
+only every other index. At first I did values at, but I kep researching
+because there had to be an easier way.
+
+What concepts are you having trouble with, or did you just figure something out? If so, what?
+I need to research more on reduce to get a better understanding.
+I saw others used reduce a lot, but I dont understand it completely and that
+is why I used inject.
+
+Did you learn any new skills or tricks?
+I learned how to use inject and chars
+
+How confident are you with each of the Learning Competencies?
+Confident
+
+Which parts of the challenge did you enjoy?
+Figuring it out
+Which parts of the challenge did you find tedious?
+I had made a mistake with my driver code, so I literally wasted over an
+hour when I had it correct the whole time.
+=end

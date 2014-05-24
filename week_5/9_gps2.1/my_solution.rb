@@ -57,3 +57,28 @@ p bakery_num(130, "pie") == "You need to make 16 pie(s), 0 cake(s), and 2 cookie
 p bakery_num(41, "cake") == "You need to make 0 pie(s), 6 cake(s), and 5 cookie(s)." # WHAAAAAT? I thought I said I wanted cake!
  
  
+
+=begin
+# 5. Reflection 
+What parts of your strategy worked? What problems did you face?
+The code was so difficult to read, but once we organized it
+and understood what every part was doing we quickly refactored it.
+
+What questions did you have while coding? What resources did you find to help you answer them?
+nothing really.
+
+What concepts are you having trouble with, or did you just figure something out? If so, what?
+none
+
+Did you learn any new skills or tricks?
+learned about has_key?
+
+How confident are you with each of the Learning Competencies?
+Confident
+
+Which parts of the challenge did you enjoy?
+The refactored code. It looks a lot better and it is more efficient.
+
+Which parts of the challenge did you find tedious?
+reading the code, it was tough.
+=end

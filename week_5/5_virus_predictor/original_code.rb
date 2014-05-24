@@ -157,3 +157,28 @@ california.virus_effects
 alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population], STATE_DATA["Alaska"][:region], STATE_DATA["Alaska"][:regional_spread]) 
 alaska.virus_effects
 =end
+
+
+=begin
+# 5. Reflection 
+What parts of your strategy worked? What problems did you face?
+I refactored using a case, but I couldn't do 0..50 for some reason
+  but it wouldn't work properly so I had to keep the first when and last as is
+
+What questions did you have while coding? What resources did you find to help you answer them?
+none
+
+What concepts are you having trouble with, or did you just figure something out? If so, what?
+no
+
+Did you learn any new skills or tricks?
+no..
+
+How confident are you with each of the Learning Competencies?
+Confident
+
+Which parts of the challenge did you enjoy?
+This was a cool challenge just because the code was very interesting
+Which parts of the challenge did you find tedious?
+nope
+=end

@@ -75,5 +75,29 @@ puts (1..6).include?(die.roll)
 
 
 
-
+=begin
 # 5. Reflection 
+What parts of your strategy worked? What problems did you face?
+I felt like I had a good understanding of what to do for this
+  challenge. I had to look up some information but other than that 
+  this was an easy challenge.
+
+What questions did you have while coding? What resources did you find to help you answer them?
+I had to figure out how to raise an argument and add attr_accessor
+
+
+What concepts are you having trouble with, or did you just figure something out? If so, what?
+None.
+
+Did you learn any new skills or tricks?
+attr_accessor and how to raise an argument
+
+How confident are you with each of the Learning Competencies?
+Confident
+
+Which parts of the challenge did you enjoy?
+getting it to work
+
+Which parts of the challenge did you find tedious?
+nothing
+=end

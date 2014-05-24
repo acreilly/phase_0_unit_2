@@ -32,7 +32,7 @@ boggle_board = [["b", "r", "a", "e"],
   puts create_word(boggle_board, [0,1], [0,2], [1,2]) == "rad"
 
 # Reflection 
-
+#I found it odd that it seemed like the code was just given to us?
 #OUTSTANDING QUESTION: Are you just giving us the code here?
 #-------------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@ end
 puts get_row(boggle_board,1) ==  ["i", "o", "d", "t"]
 puts get_row(boggle_board,2) ==  ["e", "c", "l", "r"]
 # Reflection 
-
+#very simple
 
 
 #-------------------------------------------------------------------------------
@@ -99,4 +99,21 @@ puts boggle_board[2][1] == "c"
 puts boggle_board[3][3] == "e"
 puts boggle_board[2][3] == "x"
 puts get_col(boggle_board,1)  ==  ["r", "o", "c", "a"]
-# Reflection 
+
+=begin
+# 5. Reflection 
+What parts of your strategy worked? What problems did you face?
+For the last section we had to do a bit of research but these problems were pretty simple
+What questions did you have while coding? What resources did you find to help you answer them?
+how to solve the last problem
+What concepts are you having trouble with, or did you just figure something out? If so, what?
+none
+Did you learn any new skills or tricks?
+no
+How confident are you with each of the Learning Competencies?
+Confident
+Which parts of the challenge did you enjoy?
+..
+Which parts of the challenge did you find tedious?
+..
+=end
