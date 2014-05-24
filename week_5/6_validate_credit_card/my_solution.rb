@@ -13,7 +13,7 @@
 	#raise argument if card length is less or more than 16 digits
 
 # define check card method
-	#
+	#.....
 
 
 # 3. Initial Solution

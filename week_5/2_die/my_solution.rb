@@ -41,7 +41,8 @@ end
 
 # 4. Refactored Solution
 
-
+#I believe my code is simple and easy. I don't
+# think it needs to be refactored.
 
 
 

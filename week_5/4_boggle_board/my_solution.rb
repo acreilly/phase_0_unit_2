@@ -113,7 +113,7 @@ no
 How confident are you with each of the Learning Competencies?
 Confident
 Which parts of the challenge did you enjoy?
-..
+Interesting challenge.
 Which parts of the challenge did you find tedious?
 ..
 =end

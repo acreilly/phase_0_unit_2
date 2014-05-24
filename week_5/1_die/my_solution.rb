@@ -18,7 +18,7 @@
 
 
 # 3. Initial Solution
-
+=begin
 class Die
   attr_accessor :sides
   def initialize(sides)
@@ -37,7 +37,7 @@ class Die
   end
 end
 
-
+=end
 
 # 4. Refactored Solution
 #I changed the argument error to .new. just because I want to remember that 
