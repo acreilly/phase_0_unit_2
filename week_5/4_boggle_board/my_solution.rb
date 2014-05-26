@@ -61,6 +61,7 @@ puts get_row(boggle_board,2) ==  ["e", "c", "l", "r"]
 #very simple
 
 
+<<<<<<< HEAD
 #-------------------------------------------------------------------------------
 
 # Part 3: Now write a method that takes a column number and returns all the elements in the column.
@@ -117,3 +118,5 @@ Interesting challenge.
 Which parts of the challenge did you find tedious?
 ..
 =end
+=======
+>>>>>>> FETCH_HEAD
