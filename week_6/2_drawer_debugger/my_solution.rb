@@ -106,7 +106,9 @@ def assert
 	raise "Issue with drawer!" unless yield
 end
 
-assert {....}
+assert {fork}
+assert {removed_knife}
+assert {!fork.clean}
 
 
 
