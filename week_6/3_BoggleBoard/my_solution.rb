@@ -1,7 +1,7 @@
 # U2.W6: Create a BoggleBoard Class
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 
 # 2. Pseudocode
@@ -48,7 +48,7 @@ boggle_board = BoggleBoard.new(dice_grid)
 
 
 # 4. Refactored Solution
-
+#I don't believe there was any reason to refactor. My solution is understandable and simple.
 
 
 
@@ -88,11 +88,22 @@ assert {boggle_board.get_letter(0,1) == "r"}
 =begin
 	
 What parts of your strategy worked? What problems did you face?
+This challenge was relatively easy. Everything worked well, I experimented with assert.
+
 What questions did you have while coding? What resources did you find to help you answer them?
+No, everything was simple enough.
+
 What concepts are you having trouble with, or did you just figure something out? If so, what?
+--
+
 Did you learn any new skills or tricks?
+assert
+
 How confident are you with each of the Learning Competencies?
+Confident
+
 Which parts of the challenge did you enjoy?
+making this challenge more complex, going further than we did last week.
 Which parts of the challenge did you find tedious?
 	
 =end
