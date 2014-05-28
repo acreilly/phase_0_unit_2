@@ -69,6 +69,13 @@ class Silverware
 
 end
 
+
+
+
+def assert
+	raise "Issue with drawer!" unless yield
+end
+
 knife1 = Silverware.new("knife")
 
 silverware_drawer = Drawer.new
@@ -88,27 +95,22 @@ silverware_drawer.view_contents
 
 removed_knife = silverware_drawer.remove_item(sharp_knife)
 removed_knife.eat
-puts removed_knife.clean_silverware == true
+puts removed_knife.clean_silverware
 
 silverware_drawer.view_contents
 silverware_drawer.dump
-puts silverware_drawer.view_contents #What should this return?
+puts silverware_drawer.view_contents
 
 fork = Silverware.new("fork")
-puts silverware_drawer.remove_item(fork) #add some puts statements to help you trace through the code...
 puts fork.eat
+puts fork.clean_silverware
+puts silverware_drawer.remove_item(fork) #add some puts statements to help you trace through the code...
 
 #BONUS SECTION
-puts fork.clean_silverware
+
 
 # DRIVER TESTS GO BELOW THIS LINE
-def assert
-	raise "Issue with drawer!" unless yield
-end
 
-assert {fork}
-assert {removed_knife}
-assert {!fork.clean}
 
 
 

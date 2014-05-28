@@ -24,9 +24,7 @@ class CreditCard
 
 	def initialize(card)
 	@card = card.to_s.chars.map{|x| x.to_i}
-		unless @card.length == 16
-     	 raise ArgumentError.new("Please enter a 16 digit card number")
-    	end
+     	 raise ArgumentError.new("Please enter a 16 digit card number") unless @card.length == 16
 	end
 
     def double_digit
@@ -55,7 +53,6 @@ end
 
 
 
-
 card1 = CreditCard.new(4408041234567893)
 p card1.check_card == true
 
@@ -71,13 +68,13 @@ p card3.check_card == true
 
 
 # 4. Convert your driver test code from that challenge into Assert Statements
-def card_check_assert
-raise "Card not valid!" unless yield
+def assert
+    raise "Card not valid!" unless yield
 end
 
-card_check_assert {card1.check_card}
-card_check_assert {card2.check_card}
-card_check_assert {card3.check_card}
+assert {CreditCard.new(4408041234567893).check_card == true}
+assert {CreditCard.new(1111111111111111).check_card == false}
+assert {CreditCard.new(4563960122001999).check_card == true}
 
 
 
@@ -107,4 +104,4 @@ Which parts of the challenge did you find tedious?
 None.
 =end
     
-end
+
