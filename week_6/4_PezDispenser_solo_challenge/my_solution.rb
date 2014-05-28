@@ -1,7 +1,7 @@
 # U2.W6: PezDispenser Class from User Stories
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 # 1. Review the following user stories:
 # - As a pez user, I'd like to be able to "create" a new pez dispenser with a group of flavors that 
@@ -15,14 +15,41 @@
 
 
 # 2. Pseudocode
+# create initialize with parameter of dispenser
 
+#define take_pez method
+
+#define add_pez method
+
+#define see_all_flavors
 
 
 # 3. Initial Solution
 
 class PezDispenser
  
-# your code here!
+ attr_reader :flavors
+def initialize(flavors)
+@flavors = flavors
+@pez_count = @flavors.length
+end
+
+def get_pez
+@pez_count -= 1
+@pez_count
+end
+
+def add_pez(type)
+@flavors.push(type)
+end
+
+def see_all_pez
+@flavors.length
+end
+
+def pez_count
+@pez_count
+end
  
 end
  
@@ -53,3 +80,14 @@ puts "Now you have #{super_mario.pez_count} pez!"
 
 
 # 5. Reflection 
+=begin
+	
+What parts of your strategy worked? What problems did you face?
+What questions did you have while coding? What resources did you find to help you answer them?
+What concepts are you having trouble with, or did you just figure something out? If so, what?
+Did you learn any new skills or tricks?
+How confident are you with each of the Learning Competencies?
+Which parts of the challenge did you enjoy?
+Which parts of the challenge did you find tedious?
+	
+=end
