@@ -1,7 +1,7 @@
 # U2.W6: Drawer Debugger
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 
 # 2. Original Code
@@ -114,3 +114,29 @@ assert {!fork.clean}
 
 
 # 5. Reflection 
+=begin
+
+What parts of your strategy worked? What problems did you face?
+Everything worked well. Only problem was with the last fork remove item because the item was
+not in the drawer so an error would occur. I had to add a silverware.new for fork for the tests to work.
+
+What questions did you have while coding? What resources did you find to help you answer them?
+The fork problem, but someone on the june rockets forum had asked the same question I was thinking
+so that helped.
+
+What concepts are you having trouble with, or did you just figure something out? If so, what?
+Nothing, this challenge made sense to me.
+
+Did you learn any new skills or tricks?
+I don't think so.
+
+How confident are you with each of the Learning Competencies?
+Confident.
+
+Which parts of the challenge did you enjoy?
+I enjoyed this challenge because I was able to complete it without help or trouble. I felt confident with the challege.
+
+Which parts of the challenge did you find tedious?
+None.
+
+=end
