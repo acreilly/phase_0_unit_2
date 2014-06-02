@@ -131,7 +131,7 @@ p honda.direction("right")
 p honda.distance(1.5)
 p honda.speed_limit(35)
 p honda.current_move
-p honda.speed_limit(15)
+p honda.speed_limit(15
 p honda.distance(0.25)
 p honda.stop
 p honda.direction("left")
